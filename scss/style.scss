@@ -1,0 +1,88 @@
+// Bootstrap 3.3.6
+
+/**************************************************/
+
+// Colors
+$bgColor: #CCC;
+$shadowColor: #333;
+$screenColor: #444;
+$screenTextColor: #FFF;
+$calcButtonColor1: #EEE;
+$calcButtonTextColor1: #444;
+$calcButtonBorderColor1: #CCC;
+$calcButtonColor2: #20BF9F;
+$calcButtonTextColor2: #FFF;
+$calcButtonBorderColor2: #CCC;
+// Page body color
+body { background-color: $bgColor; }
+
+// Calculator body 
+#calculator {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vh;
+  box-shadow: 5px 5px 5px $shadowColor;
+}
+
+// Screen
+#screen {
+  background-color: $screenColor;
+  color: $screenTextColor;
+  height: 110px; 
+  margin: 0px 0px 0px 0px;
+  padding-top: 60px;
+  border-style: none; 
+  border-radius: 0px; 
+  font-size: 240%;
+}
+
+// Modify spacing around button rows
+.row {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+// Remove spacing between rows
+.no-gutter [class *="col-xs"] {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+// CSS that applies to all buttons
+.btn {
+  height: 70px;
+  width: 100%;
+  padding-top: 10px;
+  border-radius: 0px;
+  font-size: 175%;
+  &:hover,
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+
+// Change color based on class
+.color-prim {
+  background-color: $calcButtonColor1;
+  color: $calcButtonTextColor1;
+  border-bottom: 1px solid $calcButtonBorderColor1;
+  border-right: 1px solid $calcButtonBorderColor1;
+}
+
+.color-sec {
+  background-color: $calcButtonColor2;
+  color: $calcButtonTextColor2;
+  border-bottom: 1px solid $calcButtonBorderColor2;
+  &:hover,
+  &:active,
+  &:focus {
+    color: $calcButtonTextColor2;
+  }
+}
+
+// Custon CSS for certain unique buttons 
+#buttonAC { padding-left: 17px; }
+#buttonParentheses { padding-top: 4px; }
+#buttonAns { padding-left: 12px; }
