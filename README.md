@@ -1,4 +1,4 @@
-# FCC-Simple-Calculator
+# Simple-Calculator
 Free Code Camp project to create a basic calculator. <br>
 
 This was created at CodePen.io. <a href="http://codepen.io/domarp/pen/oxJgbe">Click here</a> to check out the Pen. 
